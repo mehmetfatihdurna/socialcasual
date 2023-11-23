@@ -65,7 +65,7 @@ function EditPage() {
   async function save() {
 
     try {
-      const response = await axios.patch(`http://localhost:3000/api/update/${id}`, JSON.stringify(dictionary));
+      const response = await axios.patch(`${prefix}/api/update/${id}`, JSON.stringify(dictionary));
       navigate("/admin/duzenleme/sayfasi/q/q/q/t",{state:{isAdmin:'true'}});
 
     } catch (error) {

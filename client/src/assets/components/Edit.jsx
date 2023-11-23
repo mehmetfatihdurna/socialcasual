@@ -28,7 +28,7 @@ function Edit() {
           }
 
         try {
-            const response = await axios.delete(`http://localhost:3000/api/delete/${event.target.name}`);
+            const response = await axios.delete(`${prefix}/api/delete/${event.target.name}`);
             console.log(response.data);
             refreshPage();
         } catch (error) {
