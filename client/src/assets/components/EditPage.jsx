@@ -19,12 +19,14 @@ function EditPage() {
   const { state } = useLocation();
   const { id } = state; // Read values passed on state
 
+  const prefix = "https://database.socialeskisehir.com.tr"
+
   //Gelen verileri tutan dict
   let dictionary = {};
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get(`http://localhost:3000/api/getOne/${id}`);;
+      const response = await axios.get(`${prefix}/api/getOne/${id}`);;
       const data = response.data;
 
       setName(data.name);

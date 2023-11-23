@@ -9,10 +9,11 @@ function Edit() {
 
     const {state} = useLocation();
     const isAdmin = (state!=null)?state.isAdmin:'null';
+    const prefix = "https://database.socialeskisehir.com.tr"
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await axios.get('http://localhost:3000/api/getCategories');
+            const response = await axios.get(`${prefix}/api/getCategories`);
             setData(response.data);
         }
 
