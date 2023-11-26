@@ -19,7 +19,8 @@ function EditPage() {
   const { state } = useLocation();
   const { id } = state; // Read values passed on state
 
-  const prefix = "https://database.socialeskisehir.com.tr"
+  // const prefix = "https://database.socialeskisehir.com.tr"
+  const prefix = "http://localhost:3000"
 
   //Gelen verileri tutan dict
   let dictionary = {};

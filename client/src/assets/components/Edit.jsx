@@ -9,7 +9,8 @@ function Edit() {
 
     const {state} = useLocation();
     const isAdmin = (state!=null)?state.isAdmin:'null';
-    const prefix = "https://database.socialeskisehir.com.tr"
+    // const prefix = "https://database.socialeskisehir.com.tr"
+    const prefix = "http://localhost:3000"
 
     useEffect(() => {
         const fetchData = async () => {
@@ -29,6 +30,7 @@ function Edit() {
 
         try {
             const response = await axios.delete(`${prefix}/api/delete/${event.target.name}`);
+            console.log(event.target.name);
             console.log(response.data);
             refreshPage();
         } catch (error) {

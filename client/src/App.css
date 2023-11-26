@@ -5,7 +5,7 @@ body {
 .bgimage {
   background-image: url("/img/opaklogo.png");
   background-size: contain;
-  background-repeat: repeat;
+  background-repeat:repeat;
 }
 
 .fonts{

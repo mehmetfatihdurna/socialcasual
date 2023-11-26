@@ -6,7 +6,8 @@ import { useEffect, useState } from 'react';
 function Menu() {
     const [data, setData] = useState([]);
 
-    const prefix = "https://database.socialeskisehir.com.tr"
+    // const prefix = "https://database.socialeskisehir.com.tr"
+    const prefix = "http://localhost:3000"
     useEffect(() => {
         const fetchData = async () => {
             const response = await axios.get(`${prefix}/api/getCategories`);

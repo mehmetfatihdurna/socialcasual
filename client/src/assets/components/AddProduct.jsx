@@ -3,7 +3,8 @@ import axios from "axios";
 
 function AddProduct() {
 
-  const prefix = "https://database.socialeskisehir.com.tr"
+  // const prefix = "https://database.socialeskisehir.com.tr"
+  const prefix = "http://localhost:3000"
 
   const navigate = useNavigate();
   let dictionary = {
