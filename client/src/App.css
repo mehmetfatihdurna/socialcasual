@@ -1,12 +1,7 @@
-body {
-  background-color: #18181b;
+html {
+  background-color: #5E4E48;
 }
 
-.bgimage {
-  background-image: url("/img/opaklogo.png");
-  background-size: contain;
-  background-repeat:repeat;
-}
 
 .fonts{
   font-family: 'Poppins', sans-serif;

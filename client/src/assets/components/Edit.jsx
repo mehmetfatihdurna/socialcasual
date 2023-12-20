@@ -57,16 +57,16 @@ function Edit() {
             data[keyy].forEach((value, i) => {
                 liste.push(
                     <tr key={Math.random() * 10000}>
-                        <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        <th scope="row" className="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
                             {value[0]}
                         </th>
-                        <td className="px-6 py-4">
+                        <td className="px-6 py-4 text-white">
                             {keyy}
                         </td>
-                        <td className="px-6 py-4">
+                        <td className="px-6 py-4 text-white">
                             {value[2]}
                         </td>
-                        <td className="px-6 py-4">
+                        <td className="px-6 py-4 text-white">
                             {value[1]}
                         </td>
                         <td className="px-6 py-4">
@@ -83,7 +83,7 @@ function Edit() {
 
     if(isAdmin==='null'){
         return (
-            <div className='text-amber-300'>Bu sayfayı görüntülemeye yetkiniz yoktur</div>
+            <div className='text-white'>Bu sayfayı görüntülemeye yetkiniz yoktur</div>
     
         );
     }else if(isAdmin==='true'){
@@ -91,7 +91,7 @@ function Edit() {
             <div className="relative overflow-x-auto shadow-md sm:rounded-lg mb-10">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                     <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                        <tr>
+                        <tr className='text-white'>
                             <th scope="col" className="px-6 py-3">
                                 Ürün Adı
                             </th>
@@ -136,7 +136,7 @@ function Edit() {
                 </table>
     
                 <div className='grid grid-cols-3'>
-                    <button onClick={addProduct} className="col-start-2 col-span-1 block font-medium text-xl text-blue-600 dark:text-blue-500 hover:underline">+ YENİ KAYIT</button>
+                    <button onClick={addProduct} className="col-start-2 col-span-1 block font-medium text-xl text-blue-600 dark:text-white hover:underline">+ YENİ KAYIT</button>
                 </div>
             </div>
         );

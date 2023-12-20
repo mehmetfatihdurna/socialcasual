@@ -53,6 +53,16 @@ router.get('/getOne/:id', async (req, res) => {
     }
 });
 
+//GETTİNG_KAMPANYALAR
+router.get('/getKampanyalar', async (req, res) => {
+    try {
+        const data = await Model.find({'category':'KAMPANYA'});
+        res.json(data);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+});
+
 //UPDATE_BY_ID METHOD
 router.patch('/update/:id', async (req, res) => {
     try {

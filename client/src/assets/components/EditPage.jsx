@@ -5,8 +5,6 @@ import { useEffect } from 'react';
 
 function EditPage() {
 
-  const [data, setData] = useState([]);
-
   const navigate = useNavigate();
 
   // gelen verileri almak için
@@ -97,22 +95,22 @@ function EditPage() {
 
           <label className="block col-start-5 col-span-4">
             <span className="text-white">Ürün Adı</span>
-            <input name="name" onChange={eventHandler} type="text" defaultValue={name} className="mt-0 block text-amber-200 text-2xl bg-zinc-900 w-full px-0.5 border-0 border-b-2 border-amber-100 focus:ring-0 focus:border-amber-300" placeholder="" />
+            <input name="name" onChange={eventHandler} type="text" defaultValue={name} style={{'background-color': '#5E4E48'}} className="mt-0 block text-white text-2xl bg-zinc-900 w-full px-0.5 border-0 border-b-2 border-amber-100 focus:ring-0 focus:border-amber-300" placeholder="" />
           </label>
 
           <label className="block col-start-5 col-span-4">
             <span className="text-white">Kategori</span>
-            <input name="category" onChange={eventHandler} type="text" defaultValue={category} className="mt-0 block text-amber-200 text-2xl bg-zinc-900 w-full px-0.5 border-0 border-b-2 border-amber-100 focus:ring-0 focus:border-amber-300" placeholder="" />
+            <input name="category" onChange={eventHandler} type="text" defaultValue={category} style={{'background-color': '#5E4E48'}} className="mt-0 block text-white text-2xl bg-zinc-900 w-full px-0.5 border-0 border-b-2 border-amber-100 focus:ring-0 focus:border-amber-300" placeholder="" />
           </label>
 
           <label className="block col-start-5 col-span-4">
             <span className="text-white">Açıklama</span>
-            <input name="description" onChange={eventHandler} type="text" defaultValue={description} className="mt-0 block text-amber-200 text-2xl bg-zinc-900 w-full px-0.5 border-0 border-b-2 border-amber-100 focus:ring-0 focus:border-amber-300" placeholder="" />
+            <input name="description" onChange={eventHandler} type="text" defaultValue={description} style={{'background-color': '#5E4E48'}} className="mt-0 block text-white text-2xl bg-zinc-900 w-full px-0.5 border-0 border-b-2 border-amber-100 focus:ring-0 focus:border-amber-300" placeholder="" />
           </label>
 
           <label className="block col-start-5 col-span-4">
             <span className="text-white">Fiyat</span>
-            <input name="price" type="text" onChange={eventHandler} defaultValue={price} className="mt-0 block text-amber-200 text-2xl bg-zinc-900 w-full px-0.5 border-0 border-b-2 border-amber-100 focus:ring-0 focus:border-amber-300" placeholder="" />
+            <input name="price" type="text" onChange={eventHandler} defaultValue={price} style={{'background-color': '#5E4E48'}} className="mt-0 block text-white text-2xl bg-zinc-900 w-full px-0.5 border-0 border-b-2 border-amber-100 focus:ring-0 focus:border-amber-300" placeholder="" />
           </label>
 
           <div className="block col-start-5 col-span-4">

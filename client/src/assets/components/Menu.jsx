@@ -21,9 +21,6 @@ function Menu() {
     // console.log(liste);
 
 
-
-
-
     function read_list() {
 
         let keys = Object.keys(data);
@@ -48,37 +45,7 @@ function Menu() {
         });
 
         return liste;
-
-        // let subList;
-        // let liste = meals.map((values, i) => {
-
-        //     subList = Object.values(values).map((value, x) => {
-        //         let gecicilist = value.map((a) => {
-        //             return (
-        //                 <div key={Math.random() * 100} className="flex justify-between mt-2">
-        //                     <li className="">{a[0]}</li>
-        //                     <div className="">{a[1]}</div>
-        //                 </div>
-        //             );
-        //         })
-        //         return (
-        //             <div key={Math.random() * 1000} className="mt-6">
-        //                 <h2 className="text-amber-300 text-2xl">{Object.keys(values)[x]}</h2>
-        //                 {gecicilist}
-        //             </div>
-        //         );
-        //     });
-        //     return (
-        //         <div key={Math.random() * 1000}>
-        //             <ul className="text-white">
-        //                 {subList}
-        //             </ul>
-        //         </div>
-        //     );
-
-        // });
-
-        // return liste;
+     
     }
     return (
         <div style={{}}>
