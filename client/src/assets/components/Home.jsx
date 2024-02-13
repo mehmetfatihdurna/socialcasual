@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
-import Campaigns from "./Campaigns";
 
 export default function Home() {
   return (
@@ -18,7 +17,13 @@ export default function Home() {
       {/* <div className=" flex flex-col justify-center p-1 mb-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-slate-900 dark:border-gray-700">
         <div className="text-white text-3xl text-center p-5 font-bold">KAMPANYALAR</div>
       </div> */}
-      <Campaigns/>
+
+      <Link to={"/specificmenu/kampanyalar"} className="border hover:opacity-50 border-gray-200 rounded-lg shadow mb-4 dark:bg-slate-900 dark:border-gray-700">
+
+        <div className="flex flex-row justify-around">
+          <img className="rounded-t-lg object-cover" src="/img/kampanyalar.png" alt="" />
+        </div>
+      </Link>
 
       <div className='grid grid-cols-2 gap-4'>
 

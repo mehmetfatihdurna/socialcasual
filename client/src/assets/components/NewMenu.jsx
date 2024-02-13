@@ -76,6 +76,9 @@ function NewMenu() {
       case 'cinvevodka':
         heading = "CİN VE VODKA";
         break;
+      case 'kampanyalar':
+        heading = "KAMPANYALAR";
+        break;
       default:
         heading = "Başlık"
         break;
@@ -130,7 +133,7 @@ function NewMenu() {
             <div name="name" className="flex flex-row items-end p-5">
               <button onClick={goToHome}>
                 <svg
-                className='w-8 h-8'
+                  className='w-8 h-8'
                   xmlns="http://www.w3.org/2000/svg"
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                   width={500}
@@ -203,4 +206,4 @@ function NewMenu() {
   )
 }
 
-export default NewMenu
+export default NewMenu;

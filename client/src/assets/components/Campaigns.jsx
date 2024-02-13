@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Carousel from "./Carousel";
 import Shoes from "./Shoes";
 
 function Campaigns() {
