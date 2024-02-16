@@ -9,6 +9,7 @@ import EditPage from './assets/components/EditPage.jsx';
 import AddProduct from './assets/components/AddProduct.jsx';
 import Home from './assets/components/Home.jsx';
 import NewMenu from './assets/components/NewMenu.jsx';
+import PdfViewer from './assets/components/PdfViewer.jsx';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/*" element={<NoPage />} />
       <Route path='/admin/duzenleme/sayfasi/q/q/q/t' element={<Edit/>}></Route>
       <Route path='/admin/duzenleme/sayfasi/q/q/q/t/editPage/' element={<EditPage/>}></Route>
+      <Route path='/pdfViewer' element={<PdfViewer/>}></Route>
     </Routes>
   </BrowserRouter>
 );
